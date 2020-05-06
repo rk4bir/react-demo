@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import CustomRating from './Rating.js';
+import 'typeface-roboto';
 
 
 const useStyles = makeStyles({
@@ -17,12 +18,12 @@ const useStyles = makeStyles({
     padding: '0px',
   },
   imgtitle: {
-    paddingTop: '5px', 
+    paddingTop: '10px', 
     fontSize: '10px',
     fontWeight: 'bold'
   },
   longTitle: {
-    paddingTop: '5px', 
+    paddingTop: '10px', 
     fontSize: '16px',
     fontWeight: 'bold'
   },
@@ -48,19 +49,19 @@ export default function ImgMediaCard(props) {
         image={props.src}
       />
       <CardContent className={classes.cardcontent}>
-        <Typography gutterBottom variant="body" component="body" className={classes.imgtitle}>
+        <Typography variant="body1" component="p" className={classes.imgtitle}>
             {props.imageTitle}
         </Typography>
         
-        <Typography gutterBottom variant="body" component="body" className={classes.longTitle}>
+        <Typography variant="body1" component="p" className={classes.longTitle}>
           {props.longTitle}
         </Typography>
         
-        <Typography variant="body2" color="textSecondary" component="p" className='amount'>
+        <Typography variant="body1" color="textSecondary" component="p" className='amount'>
           ${props.amount} per person
         </Typography>
         
-        <Typography variant="body2" color="textSecondary" component="body" className='rating'>
+        <Typography variant="body1" color="textSecondary" component="p" className='rating'>
           <CustomRating value={props.rating} review={props.review} />
         </Typography>
       </CardContent>

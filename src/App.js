@@ -10,10 +10,6 @@ import MapPage from './components/MapPage.js';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Container className='PageContainer' maxWidth="lg">
-      	<LandingPage />
-      </Container>
 
       <Nav />
       <Container className='PageContainer' maxWidth="lg">

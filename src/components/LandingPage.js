@@ -107,7 +107,7 @@ export default function LandingPage() {
     <div className={classes.root}>
       <Grid container spacing={3}>
         
-        <Grid item md={4} xs={12}>
+        <Grid item lg={4} md={4} xs={12}>
           <Paper className={classes.paper} style={{textAlign: 'left'}}>
             <Typography gutterBottom variant="p" component="p" style={{fontSize: '14px', fontWeight: 'bold', background: 'transparent'}}>
               LOCATION
@@ -148,7 +148,7 @@ export default function LandingPage() {
                       variant="inline"
                       format="MM/dd/yyyy"
                       margin="normal"
-                      id="date-picker-inline"
+                      id="date-picker-inline-2"
                       label="Departure"
                       value={selectedDate}
                       onChange={handleDateChange}
@@ -172,9 +172,9 @@ export default function LandingPage() {
             <Collapse in={open} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>
-                <Typography gutterBottom variant="p" component="p" style={{color: '#000000', fontSize: '15px', fontWeight: 'bold', background: 'transparent'}}>
-                  2 ADULTS, 1 CHILD
-                </Typography>
+                  <Typography gutterBottom variant="p" component="p" style={{color: '#000000', fontSize: '15px', fontWeight: 'bold', background: 'transparent'}}>
+                    2 ADULTS, 1 CHILD
+                  </Typography>
                 </ListItem>
               </List>
             </Collapse>
@@ -217,7 +217,7 @@ export default function LandingPage() {
                     
         </Grid>
 
-        <Grid item md={8} xs={12}>
+        <Grid item lg={8} md={8} xs={12}>
         
         	{/* title: experiences */}
         	<Typography gutterBottom variant="body" component="body" className={classes.header}>
