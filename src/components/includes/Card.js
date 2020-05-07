@@ -37,30 +37,39 @@ const useStyles = makeStyles({
 });
 
 
+/* Card for landing page */
 export default function ImgMediaCard(props) {
   const classes = useStyles();
   
   return (
     <Card className={classes.root} elevation={0}>
+      {/* card image */}
       <CardMedia
         component="img"
         alt={props.imageTitle}
         height="140"
         image={props.src}
       />
+
+      {/* card contents */}
       <CardContent className={classes.cardcontent}>
+
+        {/* small image title */}
         <Typography variant="body1" component="p" className={classes.imgtitle}>
             {props.imageTitle}
         </Typography>
         
+        {/* Title */}
         <Typography variant="body1" component="p" className={classes.longTitle}>
           {props.longTitle}
         </Typography>
         
+        {/* rate */}
         <Typography variant="body1" color="textSecondary" component="p" className='amount'>
           ${props.amount} per person
         </Typography>
-        
+          
+        {/* rating with review number */}  
         <Typography variant="body1" color="textSecondary" component="p" className='rating'>
           <CustomRating value={props.rating} review={props.review} />
         </Typography>

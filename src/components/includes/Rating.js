@@ -24,10 +24,9 @@ const useStyles = makeStyles({
   }
 });
 
-
+/* rating component (along with review number)*/
 export default function CustomRating(props) {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <StyledRating

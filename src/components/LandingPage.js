@@ -27,10 +27,13 @@ import ImgMediaCard from './includes/Card.js';
 import ItemCarouselSlider from './Slider.js';
 import LineItem from './includes/LineItem.js';
 
+
+// styles
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    display: 'flex'
+    display: 'flex',
+    marginTop: '50px'
   },
   paper: {
     padding: theme.spacing(2),
@@ -54,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
+// card items
 const experiencItems = [
 	{
 		'src': require("../images/cards/night-life.jpg"),
@@ -89,10 +93,12 @@ const experiencItems = [
 	},
 ]
 
+
 export default function LandingPage() {
   const classes = useStyles();
-  const [selectedDate, setSelectedDate] = React.useState(new Date('2021-05-08T21:11:59'));
 
+  // state management
+  const [selectedDate, setSelectedDate] = React.useState(new Date('2021-05-08T21:11:59'));
   const [open, setOpen] = React.useState(true);
 
   const handleClick = () => {
@@ -105,13 +111,16 @@ export default function LandingPage() {
 
   return (
     <div className={classes.root}>
+      {/* container grid */}
       <Grid container spacing={3}>
-        
+        {/* left content grid */}
         <Grid item lg={4} md={4} xs={12}>
           <Paper className={classes.paper} style={{textAlign: 'left'}}>
             <Typography gutterBottom variant="p" component="p" style={{fontSize: '14px', fontWeight: 'bold', background: 'transparent'}}>
               LOCATION
             </Typography>
+
+            {/* location input */}
             <FormControl fullWidth variant="filled" style={{border: 'none'}}>
               <InputBase
                 className={classes.input}
@@ -217,6 +226,7 @@ export default function LandingPage() {
                     
         </Grid>
 
+        {/* content card based grid: right */}
         <Grid item lg={8} md={8} xs={12}>
         
         	{/* title: experiences */}
@@ -254,7 +264,7 @@ export default function LandingPage() {
     			    See all<ChevronRight fontSize='small' />
     			 </Link>
     			</Box>
-
+          {/* card items carousel */}
 	        <ItemCarouselSlider />
         </Grid>
       </Grid>
