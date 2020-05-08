@@ -3,9 +3,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,6 +32,8 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1, 2),
     fontWeight: 'bold',
     fontSize: 14,
+    color: '#000000',
+    textDecoration: 'none'
   },
 }));
 
@@ -60,10 +63,11 @@ export default function Nav() {
 
           {/* nav links */}
           <nav>
-            <Link underline='none' color="textPrimary" href="#" className={classes.link}>Host your name</Link>
-            <Link underline='none' color="textPrimary" href="#" className={classes.link}>Host your enterprise</Link>
-            <Link underline='none' color="textPrimary" href="#" className={classes.link}>Help</Link>
-            <Link underline='none' color="textPrimary" href="#" className={classes.link}>Log In</Link>
+            <Link to="/" className={classes.link}>Home</Link>
+            <Link to='#' className={classes.link}>Host your name</Link>
+            <Link to='#' className={classes.link}>Host your enterprise</Link>
+            <Link to="/map-page" className={classes.link}>Map Page</Link>
+            <Link to="#" className={classes.link}>Log In</Link>
           </nav>{/* nav links */}
 
           {/*sign up button */}

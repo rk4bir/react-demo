@@ -5,17 +5,30 @@ import './App.css';
 import Nav from './components/Nav.js';
 // import LoginForm from './components/LoginForm.js';
 import LandingPage from './components/LandingPage.js';
-//import MapPage from './components/MapPage.js';
+import MapPage from './components/MapPage.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-
-      <Nav />
-      <Container className='PageContainer' maxWidth="lg">
-      	<LandingPage />
-      </Container>
-    </div>
+  	<Router>
+	    <div className="App"> 	
+	      	<Nav />
+	      	<Container className='PageContainer' maxWidth="lg">
+	      		<Switch>
+	      			<Route exact path="/">
+	      				<LandingPage />
+	      			</Route>
+	      			<Route exact path="/map-page">
+	      				<MapPage />
+	      			</Route>
+	      		</Switch>
+	      	</Container>
+	    </div>
+    </Router>
   );
 }
 
