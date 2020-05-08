@@ -6,10 +6,18 @@ import ChevronRight from '@material-ui/icons/ChevronRight';
 import ChevronLeft from '@material-ui/icons/ChevronLeft';
 import IconButton from '@material-ui/core/IconButton';
 
+// images
+import img1 from './images/slide-items/h1.jpg';
+import img2 from "./images/slide-items/h2.jpg";
+import img3 from "./images/slide-items/h3.jpg";
+import img4 from './images/slide-items/h4.jpg';
+import img5 from "./images/slide-items/h5.jpg";
+import img6 from "./images/slide-items/h6.jpg";
+
 
 const homeItems = [
   {
-    'src': require("../images/slide-items/h1.jpg"),
+    'src': img1,
     'imageTitle': 'NIGHTLIFE - NEW YORK',
       'longTitle': "Unique Cob Cottage",
       'amount': 128,
@@ -17,7 +25,7 @@ const homeItems = [
       'review': '284 - superhost',
   },
   {
-    'src': require("../images/slide-items/h2.jpg"),
+    'src': img2,
     'imageTitle': 'ENTERTAINMENT - VANCOUVER',
       'longTitle': "The Joshua Tree House",
       'amount': 250,
@@ -25,7 +33,7 @@ const homeItems = [
       'review': '284 - superhost',
   },
   {
-    'src': require("../images/slide-items/h3.jpg"),
+    'src': img3,
     'imageTitle': 'PHOTO CLASS - LOS ANGELES',
       'longTitle': "A Pirate's Life For Me!",
       'amount': 209,
@@ -33,7 +41,7 @@ const homeItems = [
       'review': '179 - superhost',
   },
   {
-    'src': require("../images/slide-items/h4.jpg"),
+    'src': img4,
     'imageTitle': 'NIGHTLIFE - NEW YORK',
       'longTitle': "Unique Cob Cottage",
       'amount': 128,
@@ -41,7 +49,7 @@ const homeItems = [
       'review': '284 - superhost',
   },
   {
-    'src': require("../images/slide-items/h5.jpg"),
+    'src': img5,
     'imageTitle': 'ENTERTAINMENT - VANCOUVER',
       'longTitle': "The Joshua Tree House",
       'amount': 250,
@@ -49,7 +57,7 @@ const homeItems = [
       'review': '284 - superhost',
   },
   {
-    'src': require("../images/slide-items/h6.jpg"),
+    'src': img6,
     'imageTitle': 'PHOTO CLASS - LOS ANGELES',
       'longTitle': "A Pirate's Life For Me!",
       'amount': 209,

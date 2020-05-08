@@ -63,10 +63,10 @@ export default function Nav() {
 
           {/* nav links */}
           <nav>
-            <Link to="/" className={classes.link}>Home</Link>
+            <Link to="/react-demo" className={classes.link}>Home</Link>
             <Link to='#' className={classes.link}>Host your name</Link>
             <Link to='#' className={classes.link}>Host your enterprise</Link>
-            <Link to="/map-page" className={classes.link}>Map Page</Link>
+            <Link to="/react-demo/map-page" className={classes.link}>Map Page</Link>
             <Link to="#" className={classes.link}>Log In</Link>
           </nav>{/* nav links */}
 

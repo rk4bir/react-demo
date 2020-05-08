@@ -27,6 +27,12 @@ import ImgMediaCard from './includes/Card.js';
 import ItemCarouselSlider from './Slider.js';
 import LineItem from './includes/LineItem.js';
 
+// images
+import img1 from './images/cards/night-life.jpg';
+import img2 from './images/cards/entertainment.jpg';
+import img3 from './images/cards/photo-class.jpg';
+import img4 from './images/cards/photography.jpg';
+
 
 // styles
 const useStyles = makeStyles((theme) => ({
@@ -60,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
 // card items
 const experiencItems = [
 	{
-		'src': require("../images/cards/night-life.jpg"),
+		'src': img1,
 		'imageTitle': 'NIGHTLIFE - NEW YORK',
   		'longTitle': "Discover the city's party scene",
   		'amount': 35,
@@ -68,7 +74,7 @@ const experiencItems = [
   		'review': 64,
 	},
 	{
-		'src': require("../images/cards/entertainment.jpg"),
+		'src': img2,
 		'imageTitle': 'ENTERTAINMENT - VANCOUVER',
   		'longTitle': "Tour with an Enthusiastic local!",
   		'amount': 3,
@@ -76,7 +82,7 @@ const experiencItems = [
   		'review': 1,
 	},
 	{
-		'src': require("../images/cards/photo-class.jpg"),
+    'src': img3,
 		'imageTitle': 'PHOTO CLASS - LOS ANGELES',
   		'longTitle': "Must Have L.A. Pictures!",
   		'amount': 39,
@@ -84,7 +90,7 @@ const experiencItems = [
   		'review': 179,
 	},
 	{
-		'src': require("../images/cards/photography.jpg"),
+    'src': img4,
 		'imageTitle': 'PHOTOGRAPHY - NEW YORK',
   		'longTitle': "Retro photoshot in NYC",
   		'amount': 49,

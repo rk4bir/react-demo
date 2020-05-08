@@ -6,12 +6,16 @@ import Typography from '@material-ui/core/Typography';
 import FilterButton from './includes/FilterButton.js';
 import SimpleGMap from './includes/Map.js';
 
+// images 
+import img1 from './images/slide-items/h2.jpg';
+import img2 from "./images/slide-items/h3.jpg";
+import img3 from "./images/slide-items/h5.jpg";
 
 
 // card items
 const cardItems = [
   {
-    'src': require("../images/slide-items/h2.jpg"),
+    'src': img1,
     'longTitle': "Discover the city's party scene",
     'amount': 35,
     'rating': 4.5,
@@ -21,7 +25,7 @@ const cardItems = [
     'other': "Cancellation flexibility available",
   },
   {
-    'src': require("../images/slide-items/h3.jpg"),
+    'src': img2,
     'longTitle': "Discover the city's party scene",
     'amount': 45,
     'rating': 5,
@@ -31,7 +35,7 @@ const cardItems = [
     'other': "Cancellation flexibility available",
   },
   {
-    'src': require("../images/slide-items/h5.jpg"),
+    'src': img3,
     'longTitle': "Discover the city's party scene",
     'amount': 45,
     'rating': 5,
@@ -64,7 +68,7 @@ export default function MapPage (props) {
             
             {cardItems.map((cardItem) => (
               <FlexCard 
-                src={cardItem.src} 
+                src={cardItem.src}
                 longTitle={cardItem.longTitle} 
                 amount={cardItem.amount}
                 review={cardItem.review}

@@ -19,10 +19,10 @@ function App() {
 	      	<Nav />
 	      	<Container className='PageContainer' maxWidth="lg">
 	      		<Switch>
-	      			<Route exact path="/">
+	      			<Route exact path="/react-demo">
 	      				<LandingPage />
 	      			</Route>
-	      			<Route exact path="/map-page">
+	      			<Route exact path="/react-demo/map-page">
 	      				<MapPage />
 	      			</Route>
 	      		</Switch>
