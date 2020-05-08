@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rk4bir.github.io/react-demo",
   "name": "programming-hero-task",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "date-fns": "^2.12.0",
+    "gh-pages": "^2.2.0",
     "google-map-react": "^1.1.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -24,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
